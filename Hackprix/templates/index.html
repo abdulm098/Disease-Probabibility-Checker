@@ -1,0 +1,133 @@
+<!-- HTML code for Disease Probability Checker website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Probability Checker</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Container styles */
+        .container {
+            position: relative;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            text-align: center;
+        }
+        
+        /* Video background styles */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        /* Header styles */
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Header top styles */
+        .header-top {
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        
+        /* Form styles */
+        form {
+            text-align: center;
+        }
+        
+        /* Label styles */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Input text styles */
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Input submit styles */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        /* Input submit hover styles */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header top -->
+    <div class="header-top">DISEASE PREDICTION MODEL</div>
+
+    <!-- Add video background -->
+    <video class="video-background" autoplay muted loop>
+        <source src="C:\Users\farha\OneDrive\Desktop\Hackprix\3191572-uhd_3840_2160_25fps (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+ 
+    <!-- Add audio background -->
+    <audio autoplay loop>
+        <source src="voi.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    
+    <!-- Container div -->
+    <div class="container">
+        <h1>Disease Probability Checker</h1>
+        <form action="/result" method="post">
+            <label for="symptoms">Enter your symptoms separated by a comma:</label><br>
+            <input type="text" id="symptoms" name="symptoms" required style="margin: 0 auto; display: block;"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
