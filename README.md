@@ -1,6 +1,8 @@
 AIM:
 ->The main aim of this project is to caution the person suffering a disease before hand.
-->Help  educate the userregarding various symptomps and diseases.
+
+
+->Help  educate the user regarding various symptomps and diseases.
 
 
 ABOUT:
